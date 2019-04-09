@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="681.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="IP1New.PatientAccController">
+   <children>
+      <Label layoutX="46.0" layoutY="27.0" text="Account">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="82.0" text="Patient ID">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="121.0" text="Name ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="157.0" text="Date of Birth">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="AccountDob" editable="false" layoutX="175.0" layoutY="159.0" prefHeight="25.0" prefWidth="134.0" />
+      <TextField fx:id="AccountName" editable="false" layoutX="175.0" layoutY="123.0" prefHeight="25.0" prefWidth="134.0" />
+      <Button layoutX="95.0" layoutY="290.0" mnemonicParsing="false" onAction="#newAppointment" text="New appointment">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Label contentDisplay="TEXT_ONLY" layoutX="111.0" layoutY="211.0" prefHeight="79.0" prefWidth="127.0" text="Click below to book an appointment with one of our therapists" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="591.0" layoutY="27.0" mnemonicParsing="false" onAction="#logOffAction" text="Log off" />
+      <TextField fx:id="AccountUsername" editable="false" layoutX="175.0" layoutY="84.0" prefHeight="25.0" prefWidth="134.0" />
+      <Label layoutX="328.0" layoutY="39.0" text="Appointments">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="appointments" editable="false" layoutX="329.0" layoutY="111.0" prefHeight="219.0" prefWidth="304.0" />
+      <Button layoutX="391.0" layoutY="338.0" mnemonicParsing="false" onAction="#deleteAppointment" prefHeight="38.0" prefWidth="180.0" text="Cancel Appointment">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="328.0" layoutY="76.0" text="Appoint" />
+      <Label layoutX="343.0" layoutY="91.0" text="ID" />
+      <Label layoutX="385.0" layoutY="76.0" text="User" />
+      <Label layoutX="391.0" layoutY="91.0" text="ID" />
+      <Label layoutX="423.0" layoutY="76.0" text="Therapy" />
+      <Label layoutX="432.0" layoutY="89.0" text="Type" />
+      <Label layoutX="481.0" layoutY="76.0" text="Date" />
+      <Label layoutX="521.0" layoutY="76.0" text="Time" />
+      <Label layoutX="558.0" layoutY="76.0" text="Status" />
+   </children>
+</AnchorPane>

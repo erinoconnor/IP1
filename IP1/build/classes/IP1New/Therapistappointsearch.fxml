@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="263.0" prefWidth="403.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="IP1New.AppointSearchController">
+   <children>
+      <Label layoutX="92.0" layoutY="38.0" text="Enter in Appointment ID">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="appointmentid" layoutX="121.0" layoutY="102.0" />
+      <Button layoutX="169.0" layoutY="164.0" mnemonicParsing="false" onAction="#searchappoint" text="Search" />
+      <Button fx:id="cancel" layoutX="170.0" layoutY="206.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+      <Label visible = "false" fx:id="cantFindId" layoutX="133.0" layoutY="132.0" text="Can't find appointment ID" textFill="#df0c0c" />
+   </children>
+</Pane>

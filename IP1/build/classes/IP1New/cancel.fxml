@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="384.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="IP1New.CancelController">
+   <children>
+      <Button fx:id="deleteAccountButton" layoutX="132.0" layoutY="275.0" mnemonicParsing="false" onAction="#cancelAppoint" text="Cancel Appointment" />
+      <Button layoutX="168.0" layoutY="313.0" mnemonicParsing="false" onAction="#loadpatientacc" text="Cancel" />
+      <TextField fx:id="enterAccountId" layoutX="118.0" layoutY="85.0" />
+      <Label layoutX="41.0" layoutY="26.0" text="Enter the appointment id of the appointment ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="130.0" layoutY="54.0" text="you wish to cancel">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="142.0" text="Select the therapy type of the appointment">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="chooseTherapyType" layoutX="119.0" layoutY="181.0" prefWidth="150.0" />
+      <Label fx:id="selecttherapy" visible = "false" layoutX="121.0" layoutY="216.0" text="Please select a therapy type" textFill="#cd0f0f" />
+      <Label fx:id="enterid" visible = "false" layoutX="111.0" layoutY="118.0" text="Please enter an appointment id" textFill="#cd0f0f" />
+      <Label fx:id="wrong" visible = "false" layoutX="91.0" layoutY="250.0" text="Wrong therapy type or appointment id" textFill="#cd0f0f" />
+   </children>
+</Pane>
